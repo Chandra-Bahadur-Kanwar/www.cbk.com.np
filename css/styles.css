@@ -2438,7 +2438,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #1abc9c;
+  background-color: hsl(168, 76%, 42%);
   border-color: #1abc9c;
 }
 .btn-primary:hover {
@@ -10235,6 +10235,72 @@ form .row:first-child .floating-label-form-group {
   color: #fff;
 }
 
+
+
+
+
+table {
+  text-align: center;
+  position: relative;
+  border-collapse: collapse; 
+  background-color: #ffffff;
+  font-size: 14px;
+  color :#000000
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 20px;
+  
+}
+
+th {
+  background: rgb(1, 40, 168);
+  color: white;
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+
+p1 {
+  background: rgb(190, 0, 158);
+  color: white;
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+
+.primary{
+  background-color: #000000
+}
+
+
+
+tfoot > tr  {
+  background: rgb(173, 0, 0);
+  color: white;
+}
+
+ > tr  {
+  background: rgb(130, 0, 190);
+  color: white;
+
+}
+
+tbody > tr:hover {
+  background-color: #ffc107;
+}
+
+/* tr:hover {
+    background-color: #ffc107 !important;
+} */
+
+
+
 .copyright {
   background-color: #1a252f;
 }
+
+
