@@ -15,6 +15,24 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/Table.css" rel="stylesheet" />
+        <script>
+            function myFunction() {
+              // Get the text field
+              var copyText = document.getElementById("myInput");
+            
+              // Select the text field
+              copyText.select();
+              copyText.setSelectionRange(0, 99999); // For mobile devices
+            
+              // Copy the text inside the text field
+              navigator.clipboard.writeText(copyText.value);
+              
+              // Alert the copied text
+              alert("Copied the text: " + copyText.value);
+            }
+            </script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -29,7 +47,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Portfolio">LIVE ON</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Travelling">Travelling</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,24 +68,32 @@
                 <!--  Gaming Information -->
                     
                     <h2><center>I'am a Gamer-FREEFIRE</center></h2>
-                    <p class="masthead-subheading font-weight-light mb-0">SERVER : BANGALADESH</p>                        
+                    <p class="masthead-subheading font-weight-light mb-0">SERVER : BANGALADESH</p> 
+                    
                     <table style="width:100%">
-                      <tr>
-                        <td><b>Unique Identification (UID)</b></td>
-                        <td><b>In Game Name</b></td>
-                        <td><b>Guild ID</b></td>
-                        <td><b>Guild Name</b></td>
-                      </tr>
-                      <tr>
-                        <td>490466868</td>
-                        <td>ⒸⒼ〆Ꮯʜᴀɴᴅʀᴀꔪ</td>
-                        <td>61889832</td>
-                        <td>ⒸhandraⒼming</td>
-                      </tr>
-                    </table>
+                            <tr>
+                                <th scope="col">Unique Identification (UID) </th>
+                                <th scope="col">In Game Name </th> 
+                                <th scope="col">Guild ID </th>
+                                <th scope="col">Guild Name </th>
+                            <tbody>
+                            <tbody>
+                                    <tr>
+                                    <td scope="col"><input type="text" value="490466868" id="myInput"><button onclick="myFunction()">Copy</button></th> 
+                                    <td scope="col">ⒸⒼ〆Ꮯʜᴀɴᴅʀᴀꔪ</th>
+                                    <td scope="col">61889832</th>
+                                    <td scope="col">ⒸhandraⒼming</th> 
+                        </tbody>
+                         <tfoot>
+                            <tr>
+                            <td colspan="4"><B>Noted : </B><i>You can send friend request +70 LVL and 5.0 KD (Kill Rate)</i></td>
+                            </tr>
+                        </tfoot>
+                    
+                    </table> 
             </div>
         </header>
-        <!-- Portfolio Section-->
+               <!-- Portfolio Section-->
         <section class="page-section Portfolio" id="Portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
@@ -128,58 +154,326 @@
                     <div class="col-lg-4 mr-auto"><p class="lead text-center">Thank you for visiting.</p></div>
                 </div>
         </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
+
+        <section class="page-section Portfolio" id="Portfolio">
             <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Travalling</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Name</label>
-                                    <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Email Address</label>
-                                    <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Phone Number</label>
-                                    <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <br />
-                            <div id="success"></div>
-                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
-                        </form>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <!-- completed table -->
+                    <img src='assets/img/7 Province.png'/>
+        <table>
+            <caption><B>Updated :</B>10:50:55 PM, Sunday, July 7, 2024 (GMT+5:45) </caption>
+            <thead>
+                <tr>
+                    <th class="primary" scope="col">Province</th>
+                    <th scope="col">Sudurpachim  <br><select name="district">
+                        <option value="">Total District</option>
+                        <option value="darchula">Darchula</option>
+                        <option value="bajhang">Bajhang</option>
+                        <option value="bajura">Bajura</option>
+                        <option value="baitadi">Baitadi</option>
+                        <option value="doti">Doti</option>
+                        <option value="acham">Acham</option>
+                        <option value="dadeldhura">Dadeldhura</option>
+                        <option value="kanchanpur">Kanchanpur</option>
+                        <option value="kailali">Kailali</option>
+                    </select></th>
+                    <th scope="col">Karnali <br><select name="district">
+                        <option value="">Total District</option>
+                        <option value="western_rukum">Western Rukum</option>
+                        <option value="salyan">Salyan</option>
+                        <option value="dolpa">Dolpa</option>
+                        <option value="humla">Humla</option>
+                        <option value="jumla">Jumla</option>
+                        <option value="kalikot">Kalikot</option>
+                        <option value="mugu">Mugu</option>
+                        <option value="surkhet">Surkhet</option>
+                        <option value="dailekh">Dailekh</option>
+                        <option value="jajarkot">Jajarkot</option>
+                    </select></th>
+                    <th scope="col">Lumbini<br><select name="district">
+                        <option value="">Total District</option>
+                        <option value="kapilvastu">Kapilvastu</option>
+                        <option value="parasi">Parasi</option>
+                        <option value="rupandehi">Rupandehi</option>
+                        <option value="arghakhanchi">Arghakhanchi</option>
+                        <option value="gulmi">Gulmi</option>
+                        <option value="palpa">Palpa</option>
+                        <option value="dang">Dang</option>
+                        <option value="pyuthan">Pyuthan</option>
+                        <option value="rolpa">Rolpa</option>
+                        <option value="eastern_rukum">Eastern Rukum</option>
+                        <option value="banke">Banke</option>
+                        <option value="bardiya">Bardiya</option>
+                    </select></th>
+                    <th scope="col">Gandaki<br><select name="district">
+                        <option value="">Total District</option>
+                        <option value="baglung">Baglung</option>
+                        <option value="gorkha">Gorkha</option>
+                        <option value="kaski">Kaski</option>
+                        <option value="lamjung">Lamjung</option>
+                        <option value="manang">Manang</option>
+                        <option value="mustang">Mustang</option>
+                        <option value="myagdi">Myagdi</option>
+                        <option value="nawalpur">Nawalpur</option>
+                        <option value="parwat">Parwat</option>
+                        <option value="syangja">Syangja</option>
+                        <option value="tanahun">Tanahun</option>
+                    </select></th>
+                    <th scope="col">Bagmati<br><select name="district">
+                        <option value="">Total District</option>
+                        <option value="bhaktapur">Bhaktapur</option>
+                        <option value="chitwan">Chitwan</option>
+                        <option value="dhading">Dhading</option>
+                        <option value="dolakha">Dolakha</option>
+                        <option value="kathmandu">Kathmandu</option>
+                        <option value="kavrepalanchok">Kavrepalanchok</option>
+                        <option value="lalitpur">Lalitpur</option>
+                        <option value="makwanpur">Makwanpur</option>
+                        <option value="nuwakot">Nuwakot</option>
+                        <option value="ramechap">Ramechap</option>
+                        <option value="rasuwa">Rasuwa</option>
+                        <option value="sindhuli">Sindhuli</option>
+                        <option value="sindhupalchok">Sindhupalchok</option>
+                    </select></th>
+                    <th scope="col">Madhesh<br><select name="district">
+                        <option value="">Total District</option>
+                        <option value="parsa">Parsa</option>
+                        <option value="bara">Bara</option>
+                        <option value="rautahat">Rautahat</option>
+                        <option value="sarlahi">Sarlahi</option>
+                        <option value="siraha">Siraha</option>
+                        <option value="dhanusha">Dhanusha</option>
+                        <option value="saptari">Saptari</option>
+                        <option value="mahottari">Mahottari</option>
+                    </select></th>
+                    <th scope="col">Koshi<br><select name="district">
+                        <option value="">Total District</option>
+                        <option value="bhojpur">Bhojpur</option>
+                        <option value="dhankuta">Dhankuta</option>
+                        <option value="ilam">Ilam</option>
+                        <option value="jhapa">Jhapa</option>
+                        <option value="khotang">Khotang</option>
+                        <option value="morang">Morang</option>
+                        <option value="okhaldhunga">Okhaldhunga</option>
+                        <option value="pachthar">Pachthar</option>
+                        <option value="sankhuwasabha">Sankhuwasabha</option>
+                        <option value="solukhumbu">Solukhumbu</option>
+                        <option value="sunsari">Sunsari</option>
+                        <option value="taplejung">Taplejung</option>
+                        <option value="terhathum">Terhathum</option>
+                        <option value="udayapur">Udayapur</option>
+                    </select></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">Traveled</th> 
+                <td><select name="Province 7">
+                    <option value="">Traveled District</option>
+                    <option value="darchula">Darchula</option>
+                    <option value="bajhang">Bajhang</option>
+                    <option value="bajura">Bajura</option>
+                    <option value="baitadi">Baitadi</option>
+                    <option value="doti">Doti</option>
+                    <option value="acham">Acham</option>
+                    <option value="dadeldhura">Dadeldhura</option>
+                    <option value="kanchanpur">Kanchanpur</option>
+                    <option value="kailali">Kailali</option>
+                </select></td>
+                    <td><select name="district">
+                        <option value="">Traveled District</option>
+                        <option value="western_rukum">Western Rukum</option>
+                        <option value="salyan">Salyan</option>                                               
+                        <option value="humla">Humla</option>
+                        <option value="jumla">Jumla</option>
+                        <option value="kalikot">Kalikot</option>
+                        <option value="mugu">Mugu</option>
+                        <option value="surkhet">Surkhet</option>
+                        <option value="dailekh">Dailekh</option>
+                        <option value="jajarkot">Jajarkot</option>
+                    </select></td>
+                    <td><select name="district">
+                        <option value="">Traveled District</option>
+                        <option value="kapilvastu">Kapilvastu</option>
+                        <option value="rupandehi">Rupandehi</option>
+                        <option value="dang">Dang</option>
+                        <option value="rolpa">Rolpa</option>
+                        <option value="eastern_rukum">Eastern Rukum</option>
+                        <option value="banke">Banke</option>
+                    </select></td>
+                    <td><select name="district">
+                        <option value="">Traveled District</option>
+                        <option value="baglung">Baglung</option>
+                        <option value="gorkha">Gorkha</option>
+                        <option value="kaski">Kaski</option>
+                        <option value="lamjung">Lamjung</option>
+                        <option value="manang">Manang</option>
+                        <option value="mustang">Mustang</option>
+                        <option value="myagdi">Myagdi</option>
+                        <option value="nawalpur">Nawalpur</option>
+                        <option value="parwat">Parwat</option>
+                        <option value="syangja">Syangja</option>
+                        <option value="tanahun">Tanahun</option>
+                    </select></td>
+                    <td><select name="district">
+                        <option value="">Traveled District</option>
+                        <option value="bhaktapur">Bhaktapur</option>
+                        <option value="chitwan">Chitwan</option>
+                        <option value="dhading">Dhading</option>
+                        <option value="dolakha">Dolakha</option>
+                        <option value="kathmandu">Kathmandu</option>
+                        <option value="kavrepalanchok">Kavrepalanchok</option>
+                        <option value="lalitpur">Lalitpur</option>
+                        <option value="makwanpur">Makwanpur</option>
+                        <option value="nuwakot">Nuwakot</option>
+                        <option value="ramechap">Ramechap</option>
+                        <option value="rasuwa">Rasuwa</option>
+                        <option value="sindhuli">Sindhuli</option>
+                        <option value="sindhupalchok">Sindhupalchok</option>
+                    </select></td>
+                    <td><select name="district">
+                        <option value="">Traveled District</option>
+                        <option value="parsa">Parsa</option>
+                        <option value="bara">Bara</option>
+                        <option value="rautahat">Rautahat</option>
+                        <option value="sarlahi">Sarlahi</option>
+                        <option value="siraha">Siraha</option>
+                        <option value="dhanusha">Dhanusha</option>
+                        <option value="saptari">Saptari</option>
+                        <option value="mahottari">Mahottari</option>
+                    </select> </td>
+                    <td><select name="district">
+                        <option value="">Traveled District</option>
+                        <option value="bhojpur">Bhojpur</option>
+                        <option value="dhankuta">Dhankuta</option>
+                        <option value="ilam">Ilam</option>
+                        <option value="jhapa">Jhapa</option>
+                        <option value="khotang">Khotang</option>
+                        <option value="morang">Morang</option>
+                        <option value="okhaldhunga">Okhaldhunga</option>
+                        <option value="pachthar">Pachthar</option>
+                        <option value="sankhuwasabha">Sankhuwasabha</option>
+                        <option value="solukhumbu">Solukhumbu</option>
+                        <option value="sunsari">Sunsari</option>
+                        <option value="taplejung">Taplejung</option>
+                        <option value="terhathum">Terhathum</option>
+                        <option value="udayapur">Udayapur</option>
+                    </select></td>
+                    
+                </td>
+                </tr>
+                <tr>
+                    <th scope="row">Untraveled</th> 
+                <td><select name="district">
+                    <option value="">Untraveled District</option>
+                    <option value="darchula">Darchula</option>
+                    <option value="bajhang">Bajhang</option>
+                    <option value="bajura">Bajura</option>
+                    <option value="baitadi">Baitadi</option>
+                    <option value="doti">Doti</option>
+                    <option value="acham">Acham</option>
+                    <option value="dadeldhura">Dadeldhura</option>
+                    <option value="kanchanpur">Kanchanpur</option>
+                    <option value="kailali">Kailali</option>
+                </select></td>
+                    <td><select name="district">
+                        <option value="">Untraveled District</option>
+                        <option value="dolpa">Dolpa</option>
+                    </select></td>
+                    <td><select name="district">
+                        <option value="">Untraveled District</option>
+                        <option value="parasi">Parasi</option>
+                        <option value="arghakhanchi">Arghakhanchi</option>
+                        <option value="gulmi">Gulmi</option>
+                        <option value="palpa">Palpa</option>
+                        <option value="pyuthan">Pyuthan</option>
+                        <option value="bardiya">Bardiya</option>
+                    </select></td>
+                    <td><select name="district">
+                        <option value="">Untraveled District</option>
+                        <option value="baglung">Baglung</option>
+                        <option value="gorkha">Gorkha</option>
+                        <option value="kaski">Kaski</option>
+                        <option value="lamjung">Lamjung</option>
+                        <option value="manang">Manang</option>
+                        <option value="mustang">Mustang</option>
+                        <option value="myagdi">Myagdi</option>
+                        <option value="nawalpur">Nawalpur</option>
+                        <option value="parwat">Parwat</option>
+                        <option value="syangja">Syangja</option>
+                        <option value="tanahun">Tanahun</option>
+                    </select></td>
+                    <td><select name="district">
+                        <option value="">Untraveled District</option>
+                        <option value="bhaktapur">Bhaktapur</option>
+                        <option value="chitwan">Chitwan</option>
+                        <option value="dhading">Dhading</option>
+                        <option value="dolakha">Dolakha</option>
+                        <option value="kathmandu">Kathmandu</option>
+                        <option value="kavrepalanchok">Kavrepalanchok</option>
+                        <option value="lalitpur">Lalitpur</option>
+                        <option value="makwanpur">Makwanpur</option>
+                        <option value="nuwakot">Nuwakot</option>
+                        <option value="ramechap">Ramechap</option>
+                        <option value="rasuwa">Rasuwa</option>
+                        <option value="sindhuli">Sindhuli</option>
+                        <option value="sindhupalchok">Sindhupalchok</option>
+                    </select></td>
+                    <td><select name="district">
+                        <option value="">Untraveled District</option>
+                        <option value="parsa">Parsa</option>
+                        <option value="bara">Bara</option>
+                        <option value="rautahat">Rautahat</option>
+                        <option value="sarlahi">Sarlahi</option>
+                        <option value="siraha">Siraha</option>
+                        <option value="dhanusha">Dhanusha</option>
+                        <option value="saptari">Saptari</option>
+                        <option value="mahottari">Mahottari</option>
+                    </select> </td>
+                    <td><select name="district">
+                        <option value="">Untraveled District</option>
+                        <option value="bhojpur">Bhojpur</option>
+                        <option value="dhankuta">Dhankuta</option>
+                        <option value="ilam">Ilam</option>
+                        <option value="jhapa">Jhapa</option>
+                        <option value="khotang">Khotang</option>
+                        <option value="morang">Morang</option>
+                        <option value="okhaldhunga">Okhaldhunga</option>
+                        <option value="pachthar">Pachthar</option>
+                        <option value="sankhuwasabha">Sankhuwasabha</option>
+                        <option value="solukhumbu">Solukhumbu</option>
+                        <option value="sunsari">Sunsari</option>
+                        <option value="taplejung">Taplejung</option>
+                        <option value="terhathum">Terhathum</option>
+                        <option value="udayapur">Udayapur</option>
+                    </select></td>
+                    
+                </td>
+                </tr>
+                
+            </tbody>
+             <tfoot>
+                <tr>
+                <td colspan="8"><i>I want to travel all over Nepal.</i></td>
+                </tr>
+            </tfoot>
+        
+        </table>                 
                     </div>
                 </div>
             </div>
         </section>
+        
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
